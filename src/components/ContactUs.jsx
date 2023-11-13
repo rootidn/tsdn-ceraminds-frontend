@@ -4,13 +4,13 @@ import ReviewImg from "../assets/review.svg";
 export default function ContactUs() {
   return (
     <section className="min-h-[90vh]">
-      <div className="h-16" id="contact-us" ></div>
-      <div className="max-w-screen-lg mx-auto items-center justify-center px-10">
+      <div className="h-16" id="contact-us"></div>
+      <div className="max-w-screen-lg mx-auto items-center justify-center px-8 sm:px-10 text-center sm:text-left">
         <h1 className="text-center font-semibold text-3xl text-title-color pt-5">
           Share your thoughts
         </h1>
-        <div className="flex flex-row mt-10">
-          <div className="desc w-2/5 pl-10 items-center justify-center">
+        <div className="flex flex-col sm:flex-row mt-10">
+          <div className="desc w-full sm:w-2/5 pl-0 sm:pl-10 items-center justify-center">
             <h2 className="text-lg font-semibold text-subtitle-color">
               Help our apps better through your review
             </h2>
@@ -25,9 +25,9 @@ export default function ContactUs() {
                 email
               </a>
             </p>
-            <img src={ReviewImg} alt="" className="m-auto mt-10"/>
+            <img src={ReviewImg} alt="" className="m-auto mt-10" />
           </div>
-          <div className="form w-3/5 pl-10">
+          <div className="form w-full sm:w-3/5 pl-0 sm:pl-10 mt-10 sm:mt-0">
             <form
               method="POST"
               // action="https://getform.io/f/8b4a998c-3766-464c-90f4-c42fe9263083"
@@ -55,8 +55,8 @@ export default function ContactUs() {
                 required
               ></textarea>
               <button
-                className="text-white bg-gradient-to-t from-[#8778FF] to-[#A799FC] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 
-        font-medium rounded-lg dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 text-sm px-10 py-3"
+                className="text-white bg-gradient-to-t from-[#8778FF]  hover:bg-gradient-to-t hover:from-[#5f80e4] hover:to-[#b1c0ff] hover:drop-shadow-[0px_10px_10px_rgba(177,192,255,0.25)] to-[#A799FC] focus:ring-4 focus:ring-blue-300 
+        font-medium rounded-lg  focus:outline-none  text-sm px-10 py-3"
               >
                 Send
               </button>

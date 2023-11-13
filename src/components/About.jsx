@@ -14,35 +14,35 @@ export default function About() {
         <h1 className="text-center font-semibold text-3xl text-title-color pt-10">
           Meet Our Team
         </h1>
-        <div className="flex flex-col px-10 mt-16">
-          <div className="flex flex-row">
+        <div className="flex flex-col px-10 mt-10 sm:mt-16">
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-0">
             <div className="flex-1 items-center justify-center text-center">
               <img src={Avatar1} alt="" className="mx-auto" />
-              <p className="mt-4 text-base font-medium text-subtitle-color">M. Destamal Junas</p>
+              <p className="mt-2 sm:mt-4 text-base font-medium text-subtitle-color">M. Destamal Junas</p>
             </div>
             <div className="flex-1"></div>
 
             <div className="flex-1 items-center justify-center text-center">
               <img src={Avatar2} alt="" className="mx-auto" />
-              <p className="mt-4 text-base font-medium text-subtitle-color">Wilda Nurjannah</p>
+              <p className="mt-2 sm:mt-4 text-base font-medium text-subtitle-color">Wilda Nurjannah</p>
             </div>
             <div className="flex-1"></div>
 
             <div className="flex-1 items-center justify-center text-center">
               <img src={Avatar3} alt="" className="mx-auto" />
-              <p className="mt-4 text-base font-medium text-subtitle-color">Ikhsan Adi Putra</p>
+              <p className="mt-2 sm:mt-4 text-base font-medium text-subtitle-color">Ikhsan Adi Putra</p>
             </div>
           </div>
-          <div className="flex flex-row mt-10">
+          <div className="flex flex-col sm:flex-row mt:4 sm:mt-10 gap-2 sm:gap-0">
             <div className="flex-1"></div>
             <div className="flex-1 items-center justify-center text-center">
               <img src={Avatar4} alt="" className="mx-auto" />
-              <p className="mt-4 text-base font-medium text-subtitle-color">Naufaldi Hafidhigral</p>
+              <p className="mt-2 sm:mt-4 text-base font-medium text-subtitle-color">Naufaldi Hafidhigral</p>
             </div>
             <div className="flex-1"></div>
             <div className="flex-1 items-center justify-center text-center">
               <img src={Avatar5} alt="" className="mx-auto" />
-              <p className="mt-4 text-base font-medium text-subtitle-color">M. Hudzaifah Assyahid</p>
+              <p className="mt-2 sm:mt-4 text-base font-medium text-subtitle-color">M. Hudzaifah Assyahid</p>
             </div>
             <div className="flex-1"></div>
           </div>

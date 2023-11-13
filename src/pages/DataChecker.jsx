@@ -102,6 +102,7 @@ export default function DataChecker() {
   
   // reset ui
   const handleReset = () => {
+    setIsConfirmation(false)
     setIsResult(false);
     setIsForm(true);
     setFileData(null);
@@ -205,18 +206,18 @@ export default function DataChecker() {
           isConfirmation ? "visible" : "hidden"
         }`}
       >
-        <div className="w-[80vh] bg-white rounded-xl p-6 relative">
+        <div className="w-[50vh] sm:w-[80vh] bg-white rounded-xl p-6 relative">
           <h2 className="mb-2 font-bold text-lg">Confirmation</h2>
           <p className="text-sm mb-4">
             This image may contain confidential data, do you want to continue?
           </p>
           <div className="flex flex-col gap-3">
             <div className="flex flex-row flex-1 gap-3">
-              <button className="flex-1 p-5 bg-red-300 rounded-lg" onClick={() => setIsResult(true)}>
+              <button className="flex-1 p-5 bg-red-300 hover:bg-red-400 active:bg-red-300 rounded-lg" onClick={() => setIsResult(true)}>
                 Continue
               </button>
               <button
-                className="flex-1 p-5 bg-neutral-300 rounded-lg"
+                className="flex-1 p-5 bg-neutral-300 hover:bg-neutral-400 active:bg-neutral-300 rounded-lg"
                 onClick={() => {
                   cancelUpload()
                 }}
@@ -224,11 +225,11 @@ export default function DataChecker() {
                 Cancel
               </button>
             </div>
-            <button className="flex-1 p-5 bg-primary-color rounded-lg text-white" onClick={() => getCoverUpData()}>
+            <button className="flex-1 p-5 bg-primary-color hover:bg-[#6052d1] active:bg-primary-color rounded-lg text-white" onClick={() => getCoverUpData()}>
               Cover up the data
             </button>
           </div>
-          <div className="absolute top-0 right-0 p-2 text-sm rounded-bl-lg rounded-tr-xl bg-primary-color text-white opacity-80">
+          <div className="absolute top-0 right-0 p-2 text-xs rounded-bl-lg rounded-tr-xl bg-primary-color text-white opacity-80">
             <p>Ceraform</p>
           </div>
         </div>
@@ -247,10 +248,10 @@ export default function DataChecker() {
           />
           <div className="">
             <button
-              className="h-10 px-5 m-2 text-indigo-100 transition-colors duration-150 bg-indigo-700 rounded-lg focus:shadow-outline hover:bg-indigo-800"
+              className="h-10 px-5 m-2 text-indigo-100 transition-colors duration-150 bg-primary-color hover:bg-[#6052d1] rounded-lg focus:shadow-outline"
               onClick={handleReset}
             >
-              Back
+              Remove
             </button>
           </div>
         </div>

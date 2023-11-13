@@ -4,7 +4,6 @@ import Home from './pages/Home'
 import DataChecker from './pages/DataChecker'
 
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
-import Results from './pages/Results'
 
 function App() {
   return (
@@ -22,11 +21,6 @@ function App() {
               exact
               path="/checker"
               element={<DataChecker />}
-          />
-          <Route
-              exact
-              path="/results"
-              element={<Results />}
           />
           <Route
               path="*"

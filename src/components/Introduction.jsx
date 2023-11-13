@@ -12,8 +12,8 @@ export default function Introduction() {
         <p className="text-center text-base text-subtitle-color mt-4">
           Learn how to use our app and how it works
         </p>
-        <div className="flex items-center mt-10">
-          <div className="w-3/5 p-5">
+        <div className="flex flex-col-reverse sm:flex-row items-center mt-10">
+          <div className="w-full p-10 sm:w-3/5">
             <div className="relative pb-4 pl-[1.125rem] before:content-[''] before:w-[1px] before:h-[100%] before:absolute before:left-0 before:top-1.5 before:bg-[#B6B5C0]">
               <span className="h-4 w-4 bg-primary-color rounded-[50%] inline-block absolute left-[-0.5rem] top-1.5 px-[0.2375rem] py-0"></span>
               <h3 className="text-xl text-subtitle-color">Upload</h3>
@@ -47,7 +47,7 @@ export default function Introduction() {
               </p>
             </div>
           </div>
-          <div className="w-2/5 content-center items-center p-5">
+          <div className="w-full p-0 sm:p-5 sm:w-2/5 content-center items-center">
             <img src={AppIntro} alt="" className="m-auto" />
           </div>
         </div>
